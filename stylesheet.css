@@ -1,0 +1,405 @@
+/**
+ * Main Style
+ **/
+
+.hidden-in-screen{
+			display: none;
+		}
+
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica;
+	color: #333;
+	background: #efefef url(img/background.gif) repeat;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.container, html, body {
+	height: 100%;
+}
+
+.left, .right, .middle {
+	width: calc(100%/3) ;
+	height: 100%;
+	overflow: auto;
+	float: left;
+	text-align: left;
+}
+
+.right{
+	background-color: #000000;
+	width: 605px;
+	height: 100%;
+}
+
+.left{
+    width: 500px;
+	height: 100%;
+	margin-left: 70px;
+	background: url(img/left.png) repeat;
+	}
+	
+.middle{
+	width: 200px;
+	height: 100%;
+	position: center;
+	overflow: auto;
+	color: white;
+	float: left;
+	text-align: left;
+	background: url(img/middle.png) repeat;
+
+}
+.right p {
+	
+}
+
+
+
+
+div { float:left; }
+
+
+.left p {
+	text-align: left;
+	width: 450px;
+	margin-left: 20px;
+	font-size: 11pt;
+
+}
+
+.left a {
+	color: #ff0000;
+
+}
+
+.right p {
+	text-align: left;
+	width: 80%;
+	margin-left: 10px;
+	font-size: 10pt;
+}
+
+.middle p {
+	text-align: left;
+	margin-left: 15px;
+	font-size: 20pt;
+}
+
+
+.right img {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.left ol, .left ul, .right ol, .right ul {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 11pt;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+.left li {
+	padding-left: 20px;
+	margin-bottom: 15px;
+}
+
+h3, h4, h5{
+    font-family: serif;
+	font-size: 65px;
+	width: 70%;
+	display: inline-block;
+	color:blue;
+}
+
+h6, h7, h8{
+font-family: serif;
+	font-size: 65px;
+	width: 70%;
+	display: inline-block;
+	color:red;
+}
+
+h9, h19,h10, h11, h12{
+    font-family: serif;
+	font-size: 65px;
+	width: 70%;
+	display: inline-block;
+	color:blue;
+}
+
+h13, h14, h15, h16{
+    font-family: serif;
+	font-size: 65px;
+	width: 70%;
+	display: inline-block;
+	color:red;
+}
+h1{
+	font-size: 45px;
+	font-family: serif;
+	color: #00ff23;
+}
+*/
+
+#link {
+	margin-top: 30px;
+}
+
+#link.text {
+	margin-top:0px;
+}
+.textbox{
+    font-family: Arial;
+	font-size: 24px;
+	color: white;
+	
+	}
+
+.textbox1{
+    font-family: Arial;
+	font-size: 24px;
+	color: white;
+	width:700px;
+	margin:0 auto;
+	padding:20px;
+	background:black; 
+	opacity: 0.7; /* Полупрозрачный фон */
+    filter: alpha(Opacity=30);
+    box-shadow: 1px 0 50px -20px black, 1px 0 50px -20px black;
+}
+
+.menu {
+	display:block;
+	width: 50px;
+	height: 100%;
+	overflow: hidden;
+	background: #000000;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 10px;
+	
+}
+
+.menu ul {
+	padding-left: 0px;
+}
+
+.menu ul li {
+	width: 150px;
+	display: inline-block;
+	margin-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.menu li a {
+	font-family: Arial;
+	color: #ff0000;
+	font-size: 9pt;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#index {
+	width:100%;
+	height:100%;
+	margin:0; 
+	padding:0;
+	box-shadow: 0px 0px 300px 200px #0000ff;
+}
+#ps_index {
+	position:fixed;
+	overflow-x:hidden;
+	right:0px;
+	top:0px;
+    width: 50px;
+    height: 100%;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+    -webkit-transition: width 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, transform 2s;
+     z-index: 99999999999999999999999;
+}
+
+
+#ps_index. content::-webkit-scrollbar
+{
+    width:0px;
+}
+#ps_index .content::-webkit-scrollbar-track-piece
+{
+    background-color:transparent;
+    overflow-x:hidden;
+}
+
+#ps_index:hover {
+
+    width: 600px;
+}
+
+#ps_index_vertical_title {
+
+	position:absolute;
+	color: #3800ff;
+	font-family: Arial, sans-serif;
+	font-style: bold;
+	font-size:24px;
+    text-decoration: none;
+    -webkit-transform: rotate(90deg);	
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	transform-origin: bottom left;
+    width: 300px;
+    height: 36px;
+    margin-top: 10%;
+    -webkit-filter: drop-shadow(0px 0px 3px #444);
+
+}
+
+.ps_index_small_text {
+	overflow-x:hidden;
+	display: none;
+	max-height:80%;
+	overflow-y:auto;
+	font-family: serif;
+	font-style: italic;
+	font-weight:900;
+	font-size: 12px;
+	color:white;
+	width:280px;
+	margin-top:10%;
+    padding-right: 50px;
+    padding-left: 300px;
+
+}
+.ps_reference_small_text {
+	overflow-x:hidden;
+	display: none;
+	max-height:80%;
+	overflow-y:auto;
+	font-family: serif;
+	font-style: italic;
+	font-weight:900;
+	font-size: 12px;
+	color:white;
+	width:280px;
+	margin-top:10%;
+    padding-right: 50px;
+    padding-left: 100px;
+
+}
+
+.ps_reference_small_text::-webkit-scrollbar {
+    display: none;
+}
+
+
+#ps_index:hover .ps_index_small_text, .ps_reference_small_text {
+    display:block;
+}
+
+.ps_index_images {
+
+}
+
+#ps_index:hover.ps_index_images {
+    display:block;
+}
+
+
+
+
+
+/* 
+ #intro_animated_pik {
+	left: 50%;
+	top:50%;
+	position:fixed;
+	width:100vw;
+	height:100vh;
+    -webkit-filter: blur(10px);
+	
+	z-index:10000000000000;
+	-webkit-transition: all 3s; /* Safari 
+
+
+}
+
+#intro_animated_pik:hover {
+	
+    -webkit-filter: blur(0px);
+
+
+
+}
+
+#intro_animated_pik img {
+	cursor: wait;
+	position:relative;
+	left: -50%;
+	top:-50%;
+	display:block;
+	margin:0 auto;
+	width:90%;
+	height:100%;
+	-webkit-filter: drop-shadow(0px 0px 20px #000000);
+
+
+}
+
+#intro_animated_pik.rotated{
+    transform: rotate(1800deg);
+    -webkit-filter: blur(10px);
+    width:0vw;
+    height:0vh;
+
+}
+*/
+
+@media only screen and (max-width: 1024px) {
+	.left, .right {
+		width: 100%!important;
+		height: auto!important;
+	}
+
+	}
+
+	.left h1.titel {
+		font-size: 155px;
+	}
+
+	.print {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 1280px) {
+	.left h1 {
+		font-size: 45px;
+	}
+
+	.left h1.titel {
+		font-size: 150px
+	}
+}
+
+@page {
+      margin: 10cm;
+   }
+/**
+ * Print Style
+ **/
+

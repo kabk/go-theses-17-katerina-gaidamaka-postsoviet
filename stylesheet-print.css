@@ -1,0 +1,117 @@
+/**
+ * Main Style
+ **/
+
+
+
+@media print {
+	.hidden-in-print {
+		display: none;
+	}
+	
+	.hidden-in-screen{
+			display: inherit;
+		}
+		
+		img {
+			display: block;
+		}
+
+@page {
+      margin: 10cm;
+   }
+	
+	.textbox {
+		height: auto !important;
+		width: 500px;
+		page-break-after: always;
+		page-break-inside: avoid;
+	}
+
+	      div.page
+	  	      {
+	        page-break-after: always;
+	        page-break-inside: avoid;
+	        page-break-before: always;
+	      }
+	    
+	
+.menu{
+display: none;
+}
+
+.menu li a {
+	display: none;
+
+body {
+    padding:0 !important;
+    margin:0 !important;
+    height:21.7cm !important;
+    overflow:hidden !important;
+    }
+    
+ /*page-brake-before */
+ 
+/* div.chapter{
+	page-break-after 
+ }*/
+
+h3, h4, h5{
+    font: serif;
+	font-size: 65px;
+	height: auto !important;
+	width: auto !important;
+	display: inline-block;
+	color:black;
+	margin-left: 250px;
+}
+
+h6, h7, h8{
+    font: serif;
+	font-size: 65px;
+	height: auto !important;
+	display: inline-block;
+	color:black;
+	margin-left: 250px;
+}
+
+h9, h19,h10, h11, h12{
+    font: serif;
+	font-size: 65px;
+	height: auto !important;
+	display: inline-block;
+	color:black;
+	margin-left: 250px;
+}
+
+h13, h14, h15, h16{
+    font: serif;
+	font-size: 65px;
+	height: auto !important;
+	width: auto !important;
+	display: inline-block;
+	color:black;
+	margin-left: 250px;
+
+}
+
+p {
+    font: Arial;
+	font-size: 14px;
+	display: inline-block;
+	color:black;
+	width: 200px;
+	margin-left: 450px;
+	page-break-after: always;
+	page-break-inside: avoid;
+}
+
+
+img: before {
+	margin: 0px;
+	width: 100vw;
+}
+.OnePageImage { height: 100%; width: 100%; }
+
+}
+	
