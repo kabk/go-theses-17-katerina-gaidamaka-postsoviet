@@ -7,33 +7,43 @@
 @media print {
 	.hidden-in-print {
 		display: none;
-	}
+			
+		}
 	
 	.hidden-in-screen{
 			display: inherit;
 		}
 		
-		img {
-			display: block;
-		}
-
-@page {
-      margin: 10cm;
-   }
+		
 	
-	.textbox {
+	    .textbox {
+	    display: inline-block;
 		height: auto !important;
-		width: 500px;
-		page-break-after: always;
-		page-break-inside: avoid;
-	}
+		width: auto !important;
+		margin: 0 15%;
+		
 
-	      div.page
-	  	      {
-	        page-break-after: always;
-	        page-break-inside: avoid;
-	        page-break-before: always;
-	      }
+		}
+		.textbox1 {
+		display: inline-block;
+		height: auto !important;
+		width: auto !important;
+		margin: 0 15%;
+		
+    	
+	}
+	
+	.textbox::-webkit-scrollbar {
+    display: none;
+}
+@page{
+	display: inline-block;
+}
+	     div.page {
+    	page-break-before: always;
+    	page-break-inside: avoid;
+    	page-break-after: always;
+	}
 	    
 	
 .menu{
@@ -41,8 +51,8 @@ display: none;
 }
 
 .menu li a {
-	display: none;
-
+	
+}
 body {
     padding:0 !important;
     margin:0 !important;
@@ -50,68 +60,156 @@ body {
     overflow:hidden !important;
     }
     
+#index {
+	display: none;
+}
+#ps_index {
+	display: none;
+}
+    
  /*page-brake-before */
  
 /* div.chapter{
 	page-break-after 
  }*/
+ 
+h1{
+    font: serif;
+	font-size: 50pt;
+	width: 400px;
+	display: inline-block;
+	color:black;
+    font-weight: 400;
+	padding-left: 90px;
+    margin-bottom: 15px;	
+	text-transform:uppercase;}
 
+h, h2{
+    font: serif;
+	font-size: 25pt;
+	width: 300px;
+	display: inline-block;
+	color:black;
+    font-weight: 400;
+	padding-left: 90px;
+    margin-bottom: 15px;	
+	text-transform:uppercase;}
+
+	
 h3, h4, h5{
-    font: serif;
-	font-size: 65px;
-	height: auto !important;
-	width: auto !important;
-	display: inline-block;
-	color:black;
-	margin-left: 250px;
-}
 
-h6, h7, h8{
     font: serif;
-	font-size: 65px;
-	height: auto !important;
+	font-size: 50pt;
+	width: 400px;
 	display: inline-block;
 	color:black;
-	margin-left: 250px;
-}
+    font-weight: 400;
+	padding-left: 90px;
+    margin-bottom: 15px;
+    text-transform:uppercase;}
 
-h9, h19,h10, h11, h12{
+
+    h6, h7, h8{
     font: serif;
-	font-size: 65px;
-	height: auto !important;
+	font-size: 50pt;
+	width: 400px;
 	display: inline-block;
 	color:black;
-	margin-left: 250px;
-}
+    font-weight: 400;
+	padding-left: 90px;
+     margin-bottom: 15px;
+	text-transform:uppercase;}
+
+
+h9, h10, h11, h12{
+    font: serif;
+	font-size: 50pt;
+	width: 400px;
+	display: inline-block;
+	color:black;
+    font-weight: 400;
+	padding-left: 90px;
+    margin-bottom: 15px;
+	text-transform:uppercase;}
+
 
 h13, h14, h15, h16{
-    font: serif;
-	font-size: 65px;
+   font: serif;
+	font-size: 50pt;
+	width: 400px;
+	display: inline-block;
+	color:black;
+    font-weight: 400;
+	padding-left: 90px;
+    margin-bottom:15px;
+	text-transform:uppercase;}
+
+/*.ps_index_small_text {
+	overflow-x:hidden;
+	display: inline-block;
+	max-height:100%;
+	font-family: serif;
+	font-style: italic;
+	font-weight:900;
+	font-size: 12px;
+	color:black;
 	height: auto !important;
 	width: auto !important;
+    page-break-before: always;
+   
+
+}
+.ps_referense_small_text {
+	overflow-x:hidden;
 	display: inline-block;
+	max-height:100%;
+	font-family: serif;
+	font-style: italic;
+	font-weight:900;
+	font-size: 12px;
 	color:black;
-	margin-left: 250px;
+	height: auto !important;
+	width: auto !important;
+    page-break-after: always;
+	page-break-inside: avoid;
+	page-break-before: always;
 
 }
 
+*/
 p {
     font: Arial;
-	font-size: 14px;
+    font-family: sans-serif;
+	font-size: 13pt;
 	display: inline-block;
 	color:black;
-	width: 200px;
-	margin-left: 450px;
+	width:400;
 	page-break-after: always;
+	page-break-before: always;
 	page-break-inside: avoid;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-left:150px;
+
+
+}
+
+p1 {
+    font-family: :serif;
+	font-size: 9px;
+	display: inline-block;
+	color:black;
+	width:350px;
+	margin-bottom: 20px;
+	padding-left: 150px;
 }
 
 
-img: before {
+img {
 	margin: 0px;
-	width: 100vw;
-}
-.OnePageImage { height: 100%; width: 100%; }
+	height: 100%; 
+    width: 100vw;
+    page-break-before: always;
+    padding-left: 0px;
 
 }
-	

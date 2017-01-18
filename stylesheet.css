@@ -4,7 +4,7 @@
 
 .hidden-in-screen{
 			display: none;
-		}
+					}
 
 
 body {
@@ -115,22 +115,25 @@ h3, h4, h5{
 	width: 70%;
 	display: inline-block;
 	color:blue;
+	text-transform:uppercase;
 }
 
 h6, h7, h8{
-font-family: serif;
-	font-size: 65px;
-	width: 70%;
-	display: inline-block;
-	color:red;
-}
-
-h9, h19,h10, h11, h12{
     font-family: serif;
 	font-size: 65px;
 	width: 70%;
 	display: inline-block;
+	color:red;
+	text-transform:uppercase;
+}
+
+h9, h10, h11, h12{
+    font-family: serif;
+	font-size: 65px;
+	 width: 70%;
+	display: inline-block;
 	color:blue;
+	text-transform:uppercase;
 }
 
 h13, h14, h15, h16{
@@ -139,13 +142,13 @@ h13, h14, h15, h16{
 	width: 70%;
 	display: inline-block;
 	color:red;
+	text-transform:uppercase;
 }
-h1{
+h1, h2, h{
 	font-size: 45px;
 	font-family: serif;
 	color: #00ff23;
 }
-*/
 
 #link {
 	margin-top: 30px;
@@ -243,7 +246,6 @@ h1{
 }
 
 #ps_index:hover {
-
     width: 600px;
 }
 
@@ -281,9 +283,11 @@ h1{
 	width:280px;
 	margin-top:10%;
     padding-right: 50px;
-    padding-left: 300px;
+    padding-left: 250px;
 
 }
+
+
 .ps_reference_small_text {
 	overflow-x:hidden;
 	display: none;
@@ -310,63 +314,10 @@ h1{
     display:block;
 }
 
-.ps_index_images {
-
-}
-
 #ps_index:hover.ps_index_images {
     display:block;
 }
 
-
-
-
-
-/* 
- #intro_animated_pik {
-	left: 50%;
-	top:50%;
-	position:fixed;
-	width:100vw;
-	height:100vh;
-    -webkit-filter: blur(10px);
-	
-	z-index:10000000000000;
-	-webkit-transition: all 3s; /* Safari 
-
-
-}
-
-#intro_animated_pik:hover {
-	
-    -webkit-filter: blur(0px);
-
-
-
-}
-
-#intro_animated_pik img {
-	cursor: wait;
-	position:relative;
-	left: -50%;
-	top:-50%;
-	display:block;
-	margin:0 auto;
-	width:90%;
-	height:100%;
-	-webkit-filter: drop-shadow(0px 0px 20px #000000);
-
-
-}
-
-#intro_animated_pik.rotated{
-    transform: rotate(1800deg);
-    -webkit-filter: blur(10px);
-    width:0vw;
-    height:0vh;
-
-}
-*/
 
 @media only screen and (max-width: 1024px) {
 	.left, .right {
@@ -376,30 +327,7 @@ h1{
 
 	}
 
-	.left h1.titel {
-		font-size: 155px;
-	}
-
-	.print {
-		display: none;
-	}
-
-}
-
 @media only screen and (max-width: 1280px) {
 	.left h1 {
 		font-size: 45px;
 	}
-
-	.left h1.titel {
-		font-size: 150px
-	}
-}
-
-@page {
-      margin: 10cm;
-   }
-/**
- * Print Style
- **/
-
